@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>가위바위보 P2P 온라인</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="main.js" defer></script>
+</head>
+<body>
+  <h1>가위바위보 온라인</h1>
+
+  <!-- 닉네임 및 매칭 설정 -->
+  <div id="nickname-container">
+    <input type="text" id="nickname" placeholder="닉네임 입력" />
+
+    <div class="button-group">
+      <button id="createBtn">방 만들기</button>
+      <button id="joinBtn">방 참가</button>
+      <button id="randomBtn">랜덤 매칭</button>
+    </div>
+
+    <input type="text" id="roomId" placeholder="방 ID 입력" />
+  </div>
+
+  <!-- 게임 UI -->
+  <div id="game-container" style="display: none;">
+    <p id="status">상대 연결 대기 중...</p>
+    <button id="rock">✊</button>
+    <button id="scissors">✌️</button>
+    <button id="paper">🖐️</button>
+    <p id="result"></p>
+    <button id="rematch" style="display: none;">재대결</button>
+
+    <!-- 나가기 버튼 -->
+    <button id="leaveBtn">나가기</button>
+  </div>
+
+  <!-- 채팅 창 -->
+  <div id="chat-box" style="display: none;">
+    <div id="chat-log"></div>
+    <input type="text" id="chat-input" placeholder="채팅 입력 후 Enter" />
+  </div>
+</body>
+</html>
