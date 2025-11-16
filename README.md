@@ -1,5 +1,7 @@
-﻿# RockPaperScissors
+# RockPaperScissors
  
+*랜덤 매칭 기능 안됨*
+
 여기서 플레이 가능
 
 vvvvvvvvvvvvvvvv
